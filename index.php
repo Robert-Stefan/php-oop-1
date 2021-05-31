@@ -4,6 +4,7 @@
  */
 
 class User {
+
     /**
      * Attributes/Properties/Variables
      */
@@ -35,7 +36,6 @@ class User {
             echo 'Il film è adatto a tutta la famiglia!';
         }
     }
-
 }
 
 // ISTANCE 1 

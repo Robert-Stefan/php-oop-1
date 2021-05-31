@@ -16,10 +16,11 @@ class User {
      * 
      * public default
      */
-    function __construct($title, $description) {
+    function __construct($title, $description, $year) {
 
         $this->title = $title;
         $this->description = $description;
+        $this->year = $year;
 
     }
     /**
@@ -31,6 +32,8 @@ class User {
 
 }
 
+// ISTANCE 1 
+$
 
 
 

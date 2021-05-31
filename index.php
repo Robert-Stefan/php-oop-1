@@ -9,7 +9,7 @@ class User {
     public $title;
     public $description;
     public $year;
-    public $pegi = 18;
+    public $pegi;
 
     /**
      * Constructor
@@ -27,13 +27,29 @@ class User {
      * SET PEGI
      */
     public function setPegi($pegi) {
-        $this->pegi = $pegi;
+        if($pegi > 18) {
+            echo 'Attenzione! Film per maggiorenni!';
+        } else {
+            echo 'Il film è adatto a tutta la famiglia!';
+        }
     }
 
 }
 
 // ISTANCE 1 
-$
+$jurassic = new User('Jurassic World', 'Quando i dinosauri seminano il caos sull\'isola sei ragazzi di un campo avventura sul versante opposto di Isla Nublar devono unire le forze per sopravvivere.', 2020);
+
+//PRINT DATI
+echo "<p>$jurassic->title</p>";
+echo "<p>$jurassic->description</p>";
+echo "<p>Film rilasciato il: $jurassic->year</p>";
+$jurassic->setPegi(14);
+
+
+
+
+
+
 
 
 
